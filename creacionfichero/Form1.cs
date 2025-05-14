@@ -43,6 +43,21 @@ namespace creacionfichero
             using (StreamWriter fichero = new StreamWriter("fichero1. txt"))
             {
                 fichero.WriteLine("Este codigo es mas compacto");
+                        fichero.WriteLine("Lizeth");
+        fichero.WriteLine("Carrizales");
+    }
+}
+
+private void btnLeer_Click(object sender, EventArgs e)
+{
+    StreamReader fichero;
+    string linea;
+    fichero = File.OpenText("fichero1.txt");
+    linea=fichero.ReadLine();
+    Console.WriteLine(linea);
+    fichero.Close();
+
+}
 
             }
         }
